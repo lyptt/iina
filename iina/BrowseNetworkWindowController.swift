@@ -33,7 +33,6 @@ class BrowseNetworkWindowController: NSWindowController, NSWindowDelegate, NSBro
 
   @IBOutlet weak var browserView: NSBrowser!
   @IBOutlet weak var playSelectionMenuItem: NSMenuItem!
-  @IBOutlet weak var addToPlaylistMenuItem: NSMenuItem!
 
   private var devices: [BasicUPnPDevice] = []
   private var currentDevice: BasicUPnPDevice?
@@ -146,7 +145,6 @@ class BrowseNetworkWindowController: NSWindowController, NSWindowDelegate, NSBro
 
   @objc private func browserCellSelected() {
     playSelectionMenuItem.isEnabled = false
-    addToPlaylistMenuItem.isEnabled = false
 
     guard browserView.selectionIndexPaths.count > 0 else {
       return
@@ -178,7 +176,6 @@ class BrowseNetworkWindowController: NSWindowController, NSWindowDelegate, NSBro
        .filter { $0.type == .file }
 
       playSelectionMenuItem.isEnabled = selectedDeviceContent.count > 0
-      addToPlaylistMenuItem.isEnabled = playSelectionMenuItem.isEnabled
     }
   }
 
@@ -255,17 +252,6 @@ class BrowseNetworkWindowController: NSWindowController, NSWindowDelegate, NSBro
       .compactMap { $0 }
 
     PlayerCore.activeOrNewForMenuAction(isAlternative: false).openURLs(urls)
-    window?.close()
-  }
-
-  @IBAction private func addToPlaylist(_ sender: Any) {
-    let urls = selectedDeviceContent
-      .map { ($0.object as? MediaServer1ItemObject)?.uri }
-      .compactMap { $0 }
-
-    PlayerCore.activeOrNewForMenuAction(isAlternative: false).addToPlaylist(paths: urls, at: 0)
-    PlayerCore.lastActive.postNotification(.iinaPlaylistChanged)
-    PlayerCore.lastActive.sendOSD(.addToPlaylist(urls.count))
     window?.close()
   }
 }

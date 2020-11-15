@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.3"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="BrowseNetworkWindowController" customModule="IINA" customModuleProvider="target">
             <connections>
-                <outlet property="addToPlaylistMenuItem" destination="GI7-eO-tFf" id="hAM-04-SSN"/>
                 <outlet property="browserView" destination="QDc-bl-VgC" id="tC2-oE-U2A"/>
                 <outlet property="playSelectionMenuItem" destination="ij1-Nm-rNj" id="8xA-gt-Gbb"/>
                 <outlet property="window" destination="1Ji-39-rCr" id="fP8-4X-c3w"/>
@@ -62,12 +61,6 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="playSelection:" target="-2" id="tdd-Ac-e5R"/>
-                    </connections>
-                </menuItem>
-                <menuItem title="Add to Playlist" id="GI7-eO-tFf">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="addToPlaylist:" target="-2" id="OXS-07-B5W"/>
                     </connections>
                 </menuItem>
             </items>
