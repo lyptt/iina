@@ -13,6 +13,7 @@ enum IINACommand: String {
   case togglePIP = "toggle-pip"
   case openFile = "open-file"
   case openURL = "open-url"
+  case browseNetwork = "browse-network"
 
   case audioPanel = "audio-panel"
   case videoPanel = "video-panel"

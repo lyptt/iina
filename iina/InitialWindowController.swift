@@ -11,6 +11,7 @@ import Cocoa
 fileprivate extension NSUserInterfaceItemIdentifier {
   static let openFile = NSUserInterfaceItemIdentifier("openFile")
   static let openURL = NSUserInterfaceItemIdentifier("openURL")
+  static let browseNetwork = NSUserInterfaceItemIdentifier("browseNetwork")
   static let resumeLast = NSUserInterfaceItemIdentifier("resumeLast")
 }
 
@@ -273,6 +274,8 @@ class InitialWindowViewActionButton: NSView {
       (NSApp.delegate as! AppDelegate).openFile(self)
     } else if self.identifier == .openURL {
       (NSApp.delegate as! AppDelegate).openURL(self)
+    } else if self.identifier == .browseNetwork {
+      (NSApp.delegate as! AppDelegate).browseNetwork(self)
     } else {
       if let lastFile = Preference.url(for: .iinaLastPlayedFilePath),
         let windowController = window?.windowController as? InitialWindowController {

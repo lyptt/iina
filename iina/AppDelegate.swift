@@ -42,6 +42,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   // Windows
 
   lazy var openURLWindow: OpenURLWindowController = OpenURLWindowController()
+  lazy var browseNetworkWindow: BrowseNetworkWindowController = BrowseNetworkWindowController()
   lazy var aboutWindow: AboutWindowController = AboutWindowController()
   lazy var fontPicker: FontPickerWindowController = FontPickerWindowController()
   lazy var inspector: InspectorWindowController = InspectorWindowController()
@@ -447,6 +448,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     openURLWindow.isAlternativeAction = sender.tag == AlternativeMenuItemTag
     openURLWindow.showWindow(nil)
     openURLWindow.resetFields()
+  }
+
+  @IBAction func browseNetwork(_ sender: AnyObject) {
+    Logger.log("Menu - Browse Network")
+    browseNetworkWindow.showWindow(nil)
+    browseNetworkWindow.reset()
   }
 
   @IBAction func menuNewWindow(_ sender: Any) {

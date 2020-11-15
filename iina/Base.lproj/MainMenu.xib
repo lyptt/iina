@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -100,6 +100,11 @@
                                 <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES" command="YES"/>
                                 <connections>
                                     <action selector="openURL:" target="Voe-Tx-rLC" id="7MD-t2-mMA"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Browse Network..." keyEquivalent="b" id="JMj-34-qsP" userLabel="Browse Network...">
+                                <connections>
+                                    <action selector="browseNetwork:" target="Voe-Tx-rLC" id="s9H-wj-ro3"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Open Recent" id="tXI-mr-wws">
@@ -679,6 +684,7 @@ CA
                 <outlet property="audioTrackMenu" destination="DRb-Y8-xir" id="Xxw-IB-hOR"/>
                 <outlet property="backward" destination="Sif-85-FF1" id="w4k-va-FGF"/>
                 <outlet property="biggerSize" destination="lDC-IC-peP" id="fTj-cO-9y3"/>
+                <outlet property="browseNetwork" destination="JMj-34-qsP" id="IPw-su-uat"/>
                 <outlet property="chapter" destination="Fal-I4-PZk" id="DiY-VN-JpS"/>
                 <outlet property="chapterMenu" destination="d9c-me-L2H" id="Gs5-BM-ZGm"/>
                 <outlet property="chapterPanel" destination="DwM-3d-Eb9" id="Z0I-q7-mi7"/>

@@ -41,6 +41,7 @@
 "iina.toggle-music-mode" = "Toggle Music Mode";
 "iina.open-file" = "Open file";
 "iina.open-url" = "Open URL";
+"iina.browse-network" = "Browse Network";
 "iina.video-panel" = "Video panel";
 "iina.audio-panel" = "Audio panel";
 "iina.sub-panel" = "Subtitle panel";

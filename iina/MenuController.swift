@@ -56,6 +56,7 @@ class MenuController: NSObject, NSMenuDelegate {
   @IBOutlet weak var openAlternative: NSMenuItem!
   @IBOutlet weak var openURL: NSMenuItem!
   @IBOutlet weak var openURLAlternative: NSMenuItem!
+  @IBOutlet weak var browseNetwork: NSMenuItem!
   @IBOutlet weak var savePlaylist: NSMenuItem!
   @IBOutlet weak var deleteCurrentFile: NSMenuItem!
   @IBOutlet weak var newWindow: NSMenuItem!

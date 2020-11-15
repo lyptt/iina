@@ -495,6 +495,8 @@ class PlayerWindowController: NSWindowController, NSWindowDelegate {
       appDelegate.openFile(self)
     case .openURL:
       appDelegate.openURL(self)
+    case .browseNetwork:
+      appDelegate.browseNetwork(self)
     case .flip:
       menuActionHandler.menuToggleFlip(.dummy)
     case .mirror:

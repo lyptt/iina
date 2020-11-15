@@ -151,6 +151,8 @@
 		84FBCB381EEACDDD0076C77C /* FFmpegController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FBCB371EEACDDD0076C77C /* FFmpegController.m */; };
 		84FBF23E1EF06A90003EA491 /* ThumbnailCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FBF23D1EF06A90003EA491 /* ThumbnailCache.swift */; };
 		8F49C36E213EFB7E0076C4F9 /* MiniPlayerWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F49C370213EFB7E0076C4F9 /* MiniPlayerWindowController.xib */; };
+		98862DE5255FDBFB007A2F9C /* BrowseNetworkWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98862DE4255FDBFB007A2F9C /* BrowseNetworkWindowController.swift */; };
+		98862DE9255FDC1B007A2F9C /* BrowseNetworkWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98862DE8255FDC1B007A2F9C /* BrowseNetworkWindowController.xib */; };
 		9E47DAC01E3CFA6D00457420 /* DurationDisplayTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E47DABF1E3CFA6D00457420 /* DurationDisplayTextField.swift */; };
 		C789872F1E34EF170005769F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C78987311E34EF170005769F /* InfoPlist.strings */; };
 		E301EFDA21312AB300BC8588 /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E301EFD921312AB300BC8588 /* KeychainAccess.swift */; };
@@ -1164,6 +1166,8 @@
 		8F6F50541EC5E053002B47B4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/HistoryWindowController.strings; sourceTree = "<group>"; };
 		8F825CBD1F16280A0094B529 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InitialWindowController.strings; sourceTree = "<group>"; };
 		8F9D0029213B7A000068FC73 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/PrefUtilsViewController.strings; sourceTree = "<group>"; };
+		98862DE4255FDBFB007A2F9C /* BrowseNetworkWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseNetworkWindowController.swift; sourceTree = "<group>"; };
+		98862DE8255FDC1B007A2F9C /* BrowseNetworkWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowseNetworkWindowController.xib; sourceTree = "<group>"; };
 		9D02FB77218CEF35005FEB2B /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/MiniPlayerWindowController.strings; sourceTree = "<group>"; };
 		9D02FB79218CEF53005FEB2B /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/OpenURLWindowController.strings; sourceTree = "<group>"; };
 		9D1C033A2067C24600919F84 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/PrefOSCToolbarSettingsSheetController.strings; sourceTree = "<group>"; };
@@ -1788,6 +1792,8 @@
 				8400D5DA1E1AB31B006785F5 /* AboutWindowController.xib */,
 				E3BA79EC2131443A00529D99 /* OpenURLWindowController.swift */,
 				8418A2F7213F5791003166AC /* OpenURLWindowController.xib */,
+				98862DE4255FDBFB007A2F9C /* BrowseNetworkWindowController.swift */,
+				98862DE8255FDC1B007A2F9C /* BrowseNetworkWindowController.xib */,
 				84C6D3651EB2A427009BF721 /* HistoryWindowController.swift */,
 				84996F921EC11CE6009A8A39 /* HistoryWindowController.xib */,
 				846352571EEEE11A0043F0CC /* ThumbnailPeekView.swift */,
@@ -2414,6 +2420,7 @@
 				8418A2F5213F5791003166AC /* OpenURLWindowController.xib in Resources */,
 				8400D5DE1E1AB32A006785F5 /* PrefGeneralViewController.xib in Resources */,
 				8400D5C61E1AB2F1006785F5 /* MainWindowController.xib in Resources */,
+				98862DE9255FDC1B007A2F9C /* BrowseNetworkWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2593,6 +2600,7 @@
 				84A0BAA11D2FAE7600BC8DA1 /* VideoView.swift in Sources */,
 				E33BA5C4204315740069A0F6 /* AssrtSubtitle.swift in Sources */,
 				844DE1BF1D3E2B9900272589 /* MPVEvent.swift in Sources */,
+				98862DE5255FDBFB007A2F9C /* BrowseNetworkWindowController.swift in Sources */,
 				845040471E0B0F500079C194 /* CropSettingsViewController.swift in Sources */,
 				E33836852026223800ABC812 /* PrefOSCToolbarSettingsSheetController.swift in Sources */,
 				E301EFDA21312AB300BC8588 /* KeychainAccess.swift in Sources */,
